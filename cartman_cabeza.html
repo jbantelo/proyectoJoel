@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>titulo</title>
+    <style>
+    #ojosabiertos {
+
+    -webkit-animation: parpadeo 20s infinite; /* Chrome, Safari, Opera */
+    animation: parpadeo 20s infinite;
+}
+
+@-moz-keyframes parpadeo{
+    0% { opacity: 1.0; }
+    5% { opacity: 0.0; }
+    10% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    55% { opacity: 0.0; }
+    60% { opacity: 1.0; }
+    70% { opacity: 1.0; }
+    75% { opacity: 0.0; }
+    80% { opacity: 2.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {
+   0% { opacity: 1.0; }
+    1% { opacity: 0.0; }
+    2% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    52% { opacity: 1.0; }
+    60% { opacity: 1.0; }
+    61% { opacity: 0.0; }
+    62% { opacity: 2.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {
+   0% { opacity: 1.0; }
+    1% { opacity: 0.0; }
+    2% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    52% { opacity: 1.0; }
+    60% { opacity: 1.0; }
+    61% { opacity: 0.0; }
+    62% { opacity: 2.0; }
+    100% { opacity: 1.0; }
+}
+    </style>
+</head>
+<body style="background: black;">
+<svg height="500" width="500" style="background-color:brown">
+     <!-LA CABEZA->
+    <svg id="cabeza" x="0" y="0" height="240" width="250">
+         <ellipse id="shapecabeza" cx="125" cy="150" rx="120" ry="90" style="fill:#F6D8CE; stroke:black; stroke-width:1" transform=""/>
+<!--        rotate(-7 250 150)-->
+        <g id="ojos">
+            <svg id="ojoscerrados" x="80" y="95" width="115" height="70" viewBox="0 0 420 200" preserveAspectRatio="none">
+                <path d="M2,1l1,0l2,0l3,1l1,1l5,4l3,1l3,2l3,0l5,3l6,2l3,1l1,0l4,3l4,3l5,2l1,1l3,1l5,4l4,6l6,4l7,6l4,3l2,3l3,3l5,4l2,2l4,3l7,4l4,3l4,2l5,3l4,3l3,3l7,5l5,3l3,3l3,2l3,1l1,2l2,3l0,1l1,0l0,1l0,1l0,1l-1,3l0,3l-2,3l-1,3l-2,3l-1,3l-2,1l-6,2l-3,2l-5,3l-4,3l-8,4l-5,3l-10,3l-7,3l-6,1l-6,3l-6,3l-7,4l-6,2l-6,2l-3,0l-2,1l-1,0l-4,3l-6,2l-6,3l-3,1l-2,0l-2,3l-2,0l-3,2l-1,1l-1,0l-3,0l-3,2l-2,1l-1,0l-1,0l-2,0l-1,0l-1,1l-2,2l-1,0" stroke="black" style="fill: none; stroke-width: 4px;"></path>
+                <path d="M313,5l-1,0l-3,0l-7,4l-7,4l-9,4l-21,9l-16,7l-13,7l-5,3l-3,2l-3,1l-1,0l-5,3l-5,3l-3,3l-3,3l-3,1l-3,4l-1,3l-2,2l-2,3l0,1l-1,3l-2,1l-3,3l0,3l-3,1l-1,2l-2,0l0,1l-3,3l-1,1l-2,1l-1,1l-2,0l0,1l-1,0l-1,2l0,1l0,1l-2,2l0,1l0,1l0,1l2,2l0,1l0,3l0,1l0,1l0,2l2,0l1,1l4,3l3,0l5,3l6,3l5,2l6,2l4,0l4,1l5,0l4,0l3,0l2,0l6,2l2,0l4,0l3,2l5,1l1,0l5,0l2,0l5,1l9,2l12,3l11,2l9,3l10,3l4,1l9,2l8,4l5,2l9,1l7,2l8,3l5,1l3,2l1,0l1,0" stroke="black" style="fill: none; stroke-width: 4px;"></path>
+            </svg>
+            <animate></animate>
+             <svg id="ojosabiertos" x="70" y="100" width="115" height="70">
+            <!-OJO IZQUIERDO->
+                 <ellipse cx="30" cy="35" rx="27" ry="33" stroke="white" stroke-width="1" fill="white" transform="rotate(30 30 35)"/>
+                    <!-OJO DERECHO->
+                 <ellipse cx="85" cy="35" rx="27" ry="33" stroke="white" stroke-width="1" fill="white" transform="rotate(-30 85 35)"/>
+                    <!-PUPILAS IZQUIERDO->
+                <circle cx="35" cy="32" r="3" stroke="black" stroke-width="1" fill="black"/>
+                    <!-PUPILAS DERECHO->
+                <circle cx="80" cy="35" r="3" stroke="black" stroke-width="1" fill="black"/>
+            </svg>
+        </g>
+          <!-GORRO->
+        <svg id="gorro" width="300" height="200" x="-50" y="30"  >
+            <g transform="scale(3.33)">
+                   <path xmlns="http://www.w3.org/2000/svg" d="M17,32c9-36,61-32,71-3c-20-9-40-9-71,3" fill="#8ED8F8"/>
+            <!-LINEA AMARILLA DE LA CABEZA->
+<path xmlns="http://www.w3.org/2000/svg" d="M41,6c1-1,4-3,8-3c3-0,9-1,14,3l-1,2h-2h-2c0,0-3,1-5,0c-2-1-1-1-1-1l-3,1l-2-1h-1c0,0-1,2-3,2c0,0-2-1-2-3M17,34l0-2c0,0,35-20,71-3v2c0,0-35-17-71,3" fill="#FFF200"/>
+            </g>
+        </svg>
+
+    <!-BARBILLA->
+     <polyline points="135,220 137,221 140,221.5 150,222 155,221.5 170,219 180,214.5 185,211 " style="stroke:black;stroke-width:2;fill:none"/></polyline>
+
+    <!-LA BOCA->
+
+ <g id="boca1">
+    <polyline points="125,215 130,216 135,214 140,213 150,213 155,212.5 162,211 169,208 173,203 171,197 169,196.5 160,196.5 150,196.5 140,199.5 130,205.5 125,210 125,215" style="stroke:black;stroke-width:2;fill:black"/></polyline>
+
+    <!-LOS DIENTES->
+<rect x="163" y="140" rx="0" height="5" width="5" style="stroke:none;fill:white;stroke-width:5" transform="skewY(20)"></rect>
+
+<rect x="154" y="202.5" rx="0" ry="0" width="0.1" height="0.1" style="fill:white; stroke:white; stroke-width:6"></rect>
+
+  <rect x="142" y="228.5" rx="0" height="1" width="1" style="stroke:white;fill:white;stroke-width:5" transform="skewY(-10)"></rect>
+    </g>
+
+    <g id="boca2">
+         <rect x="90" y="180" height="44" width="95" style="stroke:#F6D8CE;fill:#F6D8CE;stroke-width:5"></rect>
+         <polygon points="95,196 170,200 130,230" style="fill:black;stroke:black;stroke-width:2"></polygon>
+
+        <rect x="112" y="156" rx="0" height="8" width="8" style="stroke:none;fill:white;stroke-width:5" transform="skewY(20)"></rect>
+
+        <rect x="126" y="202" rx="0" ry="0" width="3" height="2" style="fill:white; stroke:white; stroke-width:6"></rect>
+         <rect x="138" y="202" rx="0" ry="0" width="3" height="2" style="fill:white; stroke:white; stroke-width:6"></rect>
+       <rect x="150" y="228" rx="0" height="3" width="3" style="stroke:white;fill:white;stroke-width:5" transform="skewY(-10)"></rect>
+    </g>
+</g>
+
+</svg>
+
+    </body>
+
+</html>
