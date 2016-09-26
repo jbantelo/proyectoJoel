@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Titulo</title>
+     <meta charset="utf-8"/>
+     <head>
+     <body>
+         <!-esta es la escalera->
+         <svg width="200" height="200">
+             <polyline points="-150,0 -50,0 -50,50 50,50 50,100 150,100 150,150 250,150 250,500 -150,500" style="fill:black;stroke:red">
+             <animateTransform
+                        attributeName="transform"
+                               type="translate"
+                               from="0 0" to="100 50"
+                               dur="3s"
+                               repeatCount="indefinite"/>
+                            
+             </polyline>
+                   <!-esta es la pelota->
+                 <circle cx="100" cy="80" r="20" style="stroke:none;fill:black">
+                     <animate id="anim1" attributeName="cy"
+                              from="80" to="20" begin="0s;anim2.end"
+                              dur="1.5s" fill="freeze"/>
+                     <animate id="anim2" attributeName="cy"
+                              from="20" to="80" begin="anim1.end"
+                              dur="1.5s" fill="freeze"/>
+                                 </circle>
+             </svg>
+             </body>
+       </head>
+
+
+</html>

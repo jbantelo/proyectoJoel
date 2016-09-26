@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>titulo</title>
+</head>
+<body>
+
+
+    <svg width="500" height="500" style="background-color:black">
+  <g>
+        <polyline points="0,100 100,100 100,200 200,200 200,300 300,300 300,400 400,400 400,500 " style="fill:none;stroke:purple;stroke-width:20">
+
+
+        <animateTransform attributeName="transform"
+                             type="translate"
+                             from="250 250 "
+                             to="0 0"
+                             dur="5s" repeatCount="indefinite"/>
+
+        </polyline>
+        </g>
+     <circle cx="290" cy="20" r="20" style="stroke:red;fill:white;stroke-width:2">
+        <animate id="anim1" attributeName="cy"
+                 from="293" to="100" begin="0s;anim2.end"
+                 dur="1s" fill="freeze"/>
+        <animate id="anim2" attributeName="cy"
+                 from="100" to="250" begin="anim1.end"
+                 dur="1s" fill="freeze"/>
+     </svg>
+    </body>
+
+</html>
